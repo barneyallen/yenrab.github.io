@@ -1,0 +1,130 @@
+BODY {
+	MARGIN: 0px; 
+	PADDING: 0px;
+	BACKGROUND: #f5bdb9;
+	COLOR: #000000;
+	SCROLLBAR-FACE-COLOR: #ffffff;
+	SCROLLBAR-HIGHLIGHT-COLOR: #e6a099;
+	SCROLLBAR-3DLIGHT-COLOR: #ffffff;
+	SCROLLBAR-DARKSHADOW-COLOR: #ffffff;
+	SCROLLBAR-SHADOW-COLOR: #804040;
+	SCROLLBAR-ARROW-COLOR: #698e25;
+	SCROLLBAR-TRACK-COLOR: #ffffff;
+} 
+
+A:link {background: none; color: #53a512; text-decoration: underline; cursor: pointer;}
+A:visited {background: none; color: #53a512; text-decoration: underline; cursor: pointer;}
+A:hover {background: none; color: #ff0000; text-decoration: underline; cursor: pointer;}
+A:active { background: none; color: #ff0000; background: underline; cursor: pointer;}
+
+.Column {
+	WIDTH: 100%;
+	HEIGHT: 100%;
+	BORDER-LEFT: 2px solid #e6a099;
+	BORDER-TOP: 2px solid #e6a099;
+	BORDER-RIGHT: 2px solid #804040;
+	BORDER-BOTTOM: 2px solid #804040;
+}
+
+.Column TD {
+	VERTICAL-ALIGN: top;
+}
+
+.BoxStyle {
+	WIDTH: 200px;
+	MARGIN-TOP: 10px;
+}
+
+.MenuOff {
+	BACKGROUND: #fece8b;	
+	COLOR: #b83425; 
+	CURSOR: pointer; 
+	TEXT-DECORATION: none;
+	BORDER-TOP: 2px solid #f9e9c2;
+	BORDER-RIGHT: 2px solid #c2a86b;
+	BORDER-BOTTOM: 2px solid #c2a86b;
+	BORDER-LEFT: 2px solid #f9e9c2;
+	WIDTH: 100%;
+	HEIGHT: 32px;
+	PADDING-LEFT: 10px;
+	TEXT-ALIGN: center; 
+	LINE-HEIGHT: 14px;
+	FONT: bold 16px "Times New Roman", Times, serif;
+}
+
+.MenuOn {
+	BACKGROUND: #b83425;
+	COLOR: #ffffff; 
+	CURSOR: pointer; 
+	TEXT-DECORATION: none;
+	BORDER-LEFT: 1px solid #ecb5ae;
+	BORDER-TOP: 1px solid #ecb5ae;
+	BORDER-RIGHT: 1px solid #994d4d;
+	BORDER-BOTTOM: 1px solid #994d4d;
+	WIDTH: 100%;
+	HEIGHT: 32px;
+	PADDING-LEFT: 10px;
+	TEXT-ALIGN: center; 
+	LINE-HEIGHT: 1px;
+	FONT: bold 16px "Times New Roman", Times, serif;
+}
+
+.MenuClick {
+	BACKGROUND: #fece8b;
+	COLOR: #ffffff;
+	CURSOR: pointer; 
+	TEXT-DECORATION: none;
+	BORDER-TOP: 1px solid #f9e9c2;
+	BORDER-RIGHT: 1px solid #c2a86b;
+	BORDER-BOTTOM: 1px solid #c2a86b;
+	BORDER-LEFT: 1px solid #f9e9c2;
+	WIDTH: 100%;
+	HEIGHT: 32px;
+	PADDING-LEFT: 10px;
+	TEXT-ALIGN: center; 
+	LINE-HEIGHT: 14px;
+	FONT: bold 16px "Times New Roman", Times, serif;
+}
+
+.MenuOff A:link { color: #77715b; text-decoration: none; CURSOR: pointer;}
+.MenuOff A:visited { color: #b83425; text-decoration: none; CURSOR: pointer;}
+.MenuOff A:hover {color: #b83425; text-decoration: none; CURSOR: pointer;}
+
+.MenuOn A:link { color: #fece8b; text-decoration: none; CURSOR: pointer;}
+.MenuOn A:visited { color: #fece8b; text-decoration: none; CURSOR: pointer;}
+.MenuOn A:hover {color: #fece8b; text-decoration: none; CURSOR: pointer;}
+
+.MenuClick A:link { color: #b83425; text-decoration: none; CURSOR: pointer;}
+.MenuClick A:visited { color: #b83425; text-decoration: none; CURSOR: pointer;}
+.MenuClick A:hover {color: #b83425; text-decoration: none; CURSOR: pointer;}
+
+.Header {
+	WIDTH: 100%;
+	HEIGHT: 120px;
+}
+
+.Header TD {
+	PADDING: 15px;
+	VERTICAL-ALIGN: top;
+	TEXT-ALIGN: left;
+}
+
+.HeadingStyle {
+	BACKGROUND: inherit;
+	COLOR: #000000;
+	FONT: bold 22px "Times New Roman", Times, serif;
+}
+
+.MainText {
+	BACKGROUND: inherit;
+	COLOR: #000000;
+	FONT: 17px "Times New Roman", Times, serif;
+	PADDING: 15px;
+	TEXT-ALIGN: justify;
+	line-height: 1.3;
+}
+
+pre {
+  font-family: inherit;
+  white-space: pre-wrap;
+}
