@@ -60,13 +60,53 @@ AND/OR THE ASSOCIATED BACKGROUND IMAGES IS STRICTLY PROHIBITED.
 <!-- ============ Mailing List Signup ============== -->
 <div style="margin-top: 25px; padding: 0 10px;">
 <div id="mc_embed_signup">
-  <form action="https://formspree.io/f/xwvdeboz" method="POST">
+  <form id="mailing-list-form" action="https://formspree.io/f/xwvdeboz" method="POST">
     <input type="email" id="email" name="email" placeholder="email address" required style="width: 90%; padding: 5px; border: 1px solid #c2a86b; font: 13px 'Times New Roman', Times, serif;">
     <br><br>
     <input type="submit" value="Subscribe" class="MenuOff">
   </form>
+  <p id="mailing-list-message" style="display: none; font-size: 13px; color: #b83425; margin-top: 10px;"></p>
 </div>
 </div>
+
+<script>
+// Find our form and message box on the page
+var mailingForm = document.getElementById('mailing-list-form');
+var mailingMessage = document.getElementById('mailing-list-message');
+
+// Listen for the form being submitted
+mailingForm.addEventListener('submit', function(event) {
+  // Stop the browser from doing its normal "go to a new page" behavior
+  event.preventDefault();
+
+  // Gather up the form's data (the email address) to send to Formspree
+  var formData = new FormData(mailingForm);
+
+  // Send the data to Formspree ourselves, behind the scenes
+  fetch(mailingForm.action, {
+    method: 'POST',
+    body: formData,
+    headers: { 'Accept': 'application/json' }
+  })
+  .then(function(response) {
+    if (response.ok) {
+      // Success! Hide the form, show a thank-you message instead
+      mailingForm.style.display = 'none';
+      mailingMessage.textContent = "Thanks for subscribing!";
+      mailingMessage.style.display = 'block';
+    } else {
+      // Something went wrong on Formspree's end
+      mailingMessage.textContent = "Something went wrong — please try again.";
+      mailingMessage.style.display = 'block';
+    }
+  })
+  .catch(function(error) {
+    // Something went wrong with the network/connection itself
+    mailingMessage.textContent = "Something went wrong — please try again.";
+    mailingMessage.style.display = 'block';
+  });
+});
+</script>
 
 <!-- ============ END 3D BUTTON MENU ============== -->
 </td></tr></table>
