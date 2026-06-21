@@ -128,10 +128,8 @@ pre {
   font-family: inherit;
   white-space: pre-wrap;
 }
-
 /* ============ Mailing List Signup Styling ============== */
 #mc_embed_signup {
-	background: #fff;
 	font: 13px "Times New Roman", Times, serif;
 	width: 100%;
 }
@@ -142,43 +140,23 @@ pre {
 	margin: 0 0 8px 0;
 }
 
-#mc_embed_signup .indicates-required {
-	font-size: 11px;
-	color: #804040;
-	margin-bottom: 8px;
-}
-
-#mc_embed_signup .asterisk {
-	color: #b83425;
-}
-
 #mc_embed_signup label {
 	display: block;
 	font-size: 12px;
 	margin-bottom: 4px;
 }
 
-#mc_embed_signup input.email {
+#mc_embed_signup input[type="email"] {
 	width: 90%;
 	padding: 5px;
 	border: 1px solid #c2a86b;
-	margin-bottom: 10px;
+	margin: 6px 0 10px 0;
 	font: 13px "Times New Roman", Times, serif;
 }
 
-#mc_embed_signup input.button {
-	background: #fece8b;
-	color: #b83425;
-	border-top: 2px solid #f9e9c2;
-	border-right: 2px solid #c2a86b;
-	border-bottom: 2px solid #c2a86b;
-	border-left: 2px solid #f9e9c2;
-	padding: 6px 14px;
+#mc_embed_signup input[type="submit"] {
+	width: auto;
+	height: auto;
+	padding: 8px 16px;
 	cursor: pointer;
-	font: bold 13px "Times New Roman", Times, serif;
-}
-
-#mc_embed_signup input.button:hover {
-	background: #b83425;
-	color: #ffffff;
 }
