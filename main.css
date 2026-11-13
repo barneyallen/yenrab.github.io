@@ -160,3 +160,26 @@ pre {
 	padding: 8px 16px;
 	cursor: pointer;
 }
+
+/* ============ Photos Page ============== */
+.Gallery {
+	WIDTH: 100%;
+}
+
+.Gallery TD {
+	WIDTH: 50%;
+	TEXT-ALIGN: center;
+	VERTICAL-ALIGN: top;
+	FONT: 15px "Times New Roman", Times, serif;
+}
+
+.Gallery IMG {
+	MAX-WIDTH: 100%;
+	HEIGHT: auto;
+	BORDER-LEFT: 2px solid #f9e9c2;
+	BORDER-TOP: 2px solid #f9e9c2;
+	BORDER-RIGHT: 2px solid #c2a86b;
+	BORDER-BOTTOM: 2px solid #c2a86b;
+	PADDING: 4px;
+	BACKGROUND: #fece8b;
+}
