@@ -183,3 +183,24 @@ pre {
 	PADDING: 4px;
 	BACKGROUND: #fece8b;
 }
+
+.PieceImg {
+	MAX-WIDTH: 100%;
+	HEIGHT: auto;
+	BORDER-LEFT: 2px solid #f9e9c2;
+	BORDER-TOP: 2px solid #f9e9c2;
+	BORDER-RIGHT: 2px solid #c2a86b;
+	BORDER-BOTTOM: 2px solid #c2a86b;
+	PADDING: 4px;
+	BACKGROUND: #fece8b;
+	MARGIN: 8px 0;
+}
+
+.Framed {
+	BORDER-LEFT: 2px solid #f9e9c2;
+	BORDER-TOP: 2px solid #f9e9c2;
+	BORDER-RIGHT: 2px solid #c2a86b;
+	BORDER-BOTTOM: 2px solid #c2a86b;
+	PADDING: 4px;
+	BACKGROUND: #fece8b;
+}
