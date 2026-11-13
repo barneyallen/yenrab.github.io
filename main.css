@@ -204,3 +204,38 @@ pre {
 	PADDING: 4px;
 	BACKGROUND: #fece8b;
 }
+
+/* ============ Phone view ============== */
+@media (max-width: 700px) {
+	body { padding: 8px; }
+	img { max-width: 100%; height: auto; }
+
+	/* stack sidebar above content */
+	body > table,
+	body > table > tbody,
+	body > table > tbody > tr,
+	body > table > tbody > tr > td {
+		display: block;
+		width: 100% !important;
+		height: auto !important;
+		box-sizing: border-box;
+	}
+	body > table > tbody > tr > td { margin-bottom: 12px; }
+
+	.Column { height: auto !important; }
+	.BoxStyle { width: 90%; }
+
+	.Header { height: auto; }
+	.Header TD { padding: 10px; }
+	.Header .Framed { box-sizing: border-box; }
+
+	.MainText {
+		width: auto !important;
+		padding: 10px;
+		font-size: 16px;
+		text-align: left;
+	}
+
+	.Gallery { border-spacing: 8px; }
+	.Gallery TD { font-size: 13px; }
+}
