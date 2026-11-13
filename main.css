@@ -237,5 +237,5 @@ pre {
 	}
 
 	.Gallery { border-spacing: 8px; }
-	.Gallery TD { font-size: 13px; }
+	.Gallery TD { font-size: 13px; padding: 4px; }
 }
